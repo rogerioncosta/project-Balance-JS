@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="./style.css">
+	
+	<title></title>
+</head>
+
+<body>
+
+	<header>
+		<h1 id="logo"><span>.</span>finanças$</h1>
+	</header>
+
+	<main class="container">
+
+		<section id="balanco">
+
+			<h2>Balanço</h2>
+
+			<div class="cartao">
+				<h3>Entradas</h3>
+				<p id="mostraEntradas">R$ 5.000,00</p>
+			</div>
+
+			<div class="cartao">
+				<h3>Saídas</h3>
+				<p id="mostraSaidas">R$ 2.000,00</p>
+			</div>
+			
+			<div class="cartao total">
+				<h3>Total</h3>
+				<p id="mostraTotal">R$ 3.000,00</p>
+			</div>			
+					
+		</section>				
+			
+
+		<section id="transacao">
+
+			<a href="#" class="nova-transacao" onclick="caixaFormulario.abrirFormulario()">+ Nova Transação</a>
+
+			<h2>Transações</h2>
+
+			<table id="dados-tabela">
+
+				<thead>
+					<tr>
+						<th>Descrição</th>
+						<th>Valor</th>
+						<th>Data</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<!-- <tr>
+						<td class="descricao">Luz</td>
+						<td class="saida">-R$ 500,00</td>
+						<td class="data">23/01/2022</td>
+					</tr>
+
+					<tr>
+						<td class="descricao">Website</td>
+						<td class="entrada">R$ 5.000,00</td>
+						<td class="data">24/01/2022</td>
+					</tr>
+
+					<tr>
+						<td class="descricao">Internet</td>
+						<td class="saida">-R$ 200,00</td>
+						<td class="data">25/01/2022</td>
+					</tr>					 -->
+				</tbody>
+
+			</table>
+
+		</section>		
+		
+	</main>
+	<!---->
+	<div class="caixa-form-geral">
+		<div class="caixa-formulario">
+			<div id= "form">
+				<h2>Nova Transação</h2>		
+				<form action="">
+					<div class="inputs">
+						<label 
+							class="oculto" 
+							for="descricao">Descrição</label>
+						<input 
+							type="text" 
+							id="descricao" 
+							name="descricao" 
+							placeholder="Descrição"
+						/>						
+					</div>
+					
+					<div class="inputs">
+						<label 
+							class="oculto" 
+							for="valor">Valor</label>
+						<input 
+							type="number" 
+							step= "0.01"
+							id="valor" 
+							name="valor" 							
+							placeholder= "0,00"
+						/>
+						<small class="msg-ajuda">
+							Use o sinal de - para despesas, e vírgula para casas decimais.
+						</small>
+					</div>
+					
+
+					<div class="inputs">
+						<label 
+							class="oculto" 
+							for="data">Data</label>
+						<input 
+							type="date"
+							id="data" 
+							name="data"
+						/>
+					</div>
+					
+					<div class="inputs acao">
+						<a href="#" class="botao-cancelar" onclick="caixaFormulario.fecharFormulario()">Cancelar</a>
+						<button>Salvar</button>
+					</div>
+				</form>		
+			</div>				
+		</div>
+	</div>	
+	
+
+	<footer>		
+		<p><span>.</span>finanças$</p>
+	</footer>
+
+	
+
+<script src="./scrips.js"></script>
+<!-- <script src="./entenderFunction.js"></script> -->
+
+</body>
+
+</html>
+	
+
+
+
+	

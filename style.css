@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(218, 214, 214);
+}
+
+/* Cabeçalho =================== */
+header {
+    background-color: rgb(2, 53, 2);
+    padding: 120px;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: -90px;    
+}
+
+h1 > span {
+    color: yellow;
+}
+
+/* Campo dos saldos =================== */
+main {
+    width: min(90vw, 600px);
+    margin: auto;
+    margin-top: -190px;
+    margin-bottom: 15px;    
+}
+
+section > h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#balanco h2 {
+    color: white;
+}
+
+.cartao {   
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.cartao > h3 {
+    margin-bottom: 15px;
+}
+
+.cartao > p {
+    font-size: 25px;
+}
+
+.cartao.total {
+    background-color: rgb(50, 168, 50);
+    color: white;
+}
+
+/* Botão novo lançamento =================== */
+.nova-transacao {
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    padding: 5px;
+    color:rgb(2, 102, 2);
+    background-color: rgb(218, 214, 214);
+    border: 1px solid rgb(195, 194, 194);
+    border-radius: 4px;
+}
+
+/* Tabela dados =================== */
+#dados-tabela {
+    /* border-spacing: 0 0.5rem; */ 
+    width: 100%;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+table th, td {
+    background-color: white;
+    padding: 5px;
+    height: 35px;
+}
+
+.entrada {
+    color: rgb(50, 168, 50);
+}
+
+.saida {
+    color: red;
+}
+
+/* Caixa que envolve o formulário =================== */
+.caixa-form-geral {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;    
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.caixa-form-geral.abrir-formulario {
+    visibility: visible;
+}
+
+/* Caixa branca do formulário =================== */
+.caixa-formulario {
+    background: rgb(218, 214, 214);
+    padding: 2.4rem;
+    border-radius: 3px;    
+    /* border: 4px solid red; */
+}
+
+
+
+/* Formulário cadastro =================== */
+#form {
+    max-width: 450px;       
+    /* border: 1px solid blue;  */
+}
+
+#form h2 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.inputs {
+    margin-top: 0.8rem;    
+}
+
+.oculto {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.inputs small {
+    opacity: 0.4;
+}
+
+.inputs.acao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs.acao a,
+.inputs.acao button {
+    width: 48%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: white;
+    background: rgb(2, 53, 2);
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3dd705;
+}
+
+.botao-cancelar {
+    color: red;
+    border: 2px red solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.botao-cancelar:hover {
+    opacity: 1;
+}
+
+
+/* Rodapé =================== */
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+p > span {
+    font-size: 40px;
+    color: red;
+}
