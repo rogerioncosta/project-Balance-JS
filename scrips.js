@@ -15,7 +15,7 @@ const caixaFormulario = {
         
         // fecharFormulario2() {
         //     let test = document.getElementsByClassName("caixa-form-geral abrir-formulario")[0]
-        //     test.classList.remove("abrir-formulario")
+        //     test.classList.remove("abrir-formulario").
         // }
 }
 
