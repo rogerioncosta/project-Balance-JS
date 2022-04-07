@@ -96,7 +96,7 @@ const DOM = {
         // Dentro do html do tr, coloca os tds
         // a var tr tem o valor dos tds
 
-        console.log(tr.innerHTML)
+        console.log(tr.innerHTML + "****")
 
         // Adiciona o tr dentro de #dados-tabela no tbody. Child é o tr
         DOM.containerTransacoes.appendChild(tr)
