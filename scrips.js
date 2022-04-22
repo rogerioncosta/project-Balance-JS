@@ -229,13 +229,13 @@ const form = {
 
         try {
             form.validarCampos()
-            const transacao = form.formatarValores()
-            Transacao.add(transacao)
+            const t = form.formatarValores()
+            Transacao.add(t)
             form.limparCampos()
             caixaFormulario.fecharFormulario()
 
         } catch (error) {
-            alert(error.message)
+            // alert(error.message)
         }
 
     }
